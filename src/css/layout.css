@@ -9,7 +9,7 @@
 }
 
 :root {
-  --ff-prmy: "Manrope";
+  --ff-prmy: Manrope;
 
   --fs-prmy: 2rem;
   --fs-sec: 1.5rem;
@@ -28,7 +28,52 @@
   font-weight: var(--fw-prmy);
   font-family: var(--ff-prmy);
 
-  margin: 0 auto;
-
   background-color: var(--col-quat);
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.Quote {
+  max-width: 1440px;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  background-color: var(--col-tri);
+  color: var(--col-prmy);
+
+  border-radius: 10px;
+  padding: 1.5em;
+
+  text-align: center;
+  width: 50%;
+}
+
+.Quote__Title {
+  color: var(--col-sec);
+
+  font-size: var(--fs-sec);
+  font-weight: var(--fw-sec);
+  text-transform: uppercase;
+}
+.diceCon {
+  transform: translateY(90%);
+
+  width: 20%;
+  max-width: 300px;
+
+  padding: 0.95em;
+  background-color: var(--col-sec);
+  border-radius: 50%;
+
+  align-self: center;
+
+  cursor: pointer;
+}
+
+.Quote__Dice {
+  width: 100%;
 }
